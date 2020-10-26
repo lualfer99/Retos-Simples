@@ -14,7 +14,7 @@ var Main = /** @class */ (function () {
     };
     Main.prototype.setMes = function (mes) {
         this.mes = mes;
-    };
+    }; 
     Main.prototype.calcularSigno = function (dia, mes) {
         if (mes == "Enero") {
             if (this.dia >= 21) {

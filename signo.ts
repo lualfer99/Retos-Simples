@@ -134,7 +134,7 @@ class Main {
     }
 
 }
-
+ 
 let miSigno: Main = new Main (22,"Octubre");
 
 console.log(miSigno.calcularSigno(22,"Octubre"));
