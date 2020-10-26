@@ -129,12 +129,12 @@ class Main {
             } else {
                 return "sagitario";
             }
-        }
-        return "fecha no valida papu :v";
+        } 
+        return "fecha no valida ";
     }
 
 }
- 
+
 let miSigno: Main = new Main (22,"Octubre");
 
 console.log(miSigno.calcularSigno(22,"Octubre"));
