@@ -16,5 +16,6 @@ function arcoiris(x:string[]){
 
        
     
+console.log("");
 
 console.log(arcoiris(["Rojo", "Caca", "Verde", "Azul", "Violeta"]))
