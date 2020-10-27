@@ -5,7 +5,6 @@ var africa = ["Camerún", "Egipto", "Guinea", "Libia", "Nigeria"];
 var oceania = ["Austria", "Nueva Zelanda", "Samoa", "Nueva Guinea", "Islas Salomón"];
 function continent(country) {
     var continentes = [latinoAmeria, europa, asia, africa, oceania];
-    var matriz = new Array(continentes);
     for (var i = 0; i < continentes.length; i++) {
         var mensaje = "";
         if (latinoAmeria[i] == country) {
