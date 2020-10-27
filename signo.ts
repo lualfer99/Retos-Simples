@@ -1,41 +1,7 @@
-class Main {
-    dia:number;
-    mes:string;
-
-    constructor(dia:number,mes:string)
+function calcularSigno(dia:number, mes:string)
     {
-        this.dia = dia;
-        this.mes = mes;
-
-    }
-
-
-    getDia():number
-    {
-        return this.dia;
-    }
-
-    getMes():string
-    {
-        return this.mes;
-    }
-
-    setDia(dia:number)
-    {
-        this.dia = dia;
-    }
-
-    setMes(mes:string)
-    {
-        this.mes = mes;
-    }
-
-    calcularSigno(dia:number, mes:string)
-    {
-
-
         if (mes == "Enero") {
-            if (this.dia >= 21) {
+            if (dia >= 21) {
                 //acuario
                 return "acuario";
             } else {
@@ -43,14 +9,14 @@ class Main {
                 return "capricornio";
             }
         }
-        if (this.mes == "Febrero") {
+        if (mes == "Febrero") {
             if (dia >= 19) {
                 return "piscis";
             } else {
                 return "acuario";
             }
         }
-        if (this.mes == "Marzo") {
+        if (mes == "Marzo") {
             if (dia >= 20) {
                 //acuario
                 return "aries";
@@ -59,14 +25,14 @@ class Main {
                 return "piscis";
             }
         }
-        if (this.mes == "Abril") {
+        if (mes == "Abril") {
             if (dia >= 20) {
                 return "tauro";
             } else {
                 return "Aries";
             }
         }
-        if (this.mes == "Mayo") {
+        if (mes == "Mayo") {
             if (dia >= 21) {
                 //acuario
                 return "geminis";
@@ -75,14 +41,14 @@ class Main {
                 return "tauro";
             }
         }
-        if (this.mes == "Junio") {
+        if (mes == "Junio") {
             if (dia >= 20) {
                 return "cancer";
             } else {
                 return "geminis";
             }
         }
-        if (this.mes == "Julio") {
+        if (mes == "Julio") {
             if (dia >= 22) {
                 //acuario
                 return "leo";
@@ -91,14 +57,14 @@ class Main {
                 return "cancer";
             }
         }
-        if (this.mes == "Agosto") {
+        if (mes == "Agosto") {
             if (dia >= 21) {
                 return "virgo";
             } else {
                 return "leo";
             }
         }
-        if (this.mes == "Septiembre") {
+        if (mes == "Septiembre") {
             if (dia >= 22) {
                 //acuario
                 return "libra";
@@ -107,14 +73,14 @@ class Main {
                 return "virgo";
             }
         }
-        if (this.mes == "Octubre") {
+        if (mes == "Octubre") {
             if (dia >= 22) {
                 return "escorpion";
             } else {
                 return "libra";
             }
         }
-        if (this.mes == "Noviembre") {
+        if (mes == "Noviembre") {
             if (dia >= 21) {
                 //acuario
                 return "sagitario";
@@ -123,7 +89,7 @@ class Main {
                 return "escorpion";
             }
         }
-        if (this.mes == "Diciembre") {
+        if (mes == "Diciembre") {
             if (dia >= 21) {
                 return "capricornio";
             } else {
@@ -133,8 +99,9 @@ class Main {
         return "fecha no valida ";
     }
 
-}
 
-let miSigno: Main = new Main (22,"Octubre");
 
-console.log(miSigno.calcularSigno(22,"Octubre"));
+console.log(calcularSigno(21,"Octubre"));
+
+
+

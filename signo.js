@@ -1,132 +1,112 @@
-var Main = /** @class */ (function () {
-    function Main(dia, mes) {
-        this.dia = dia;
-        this.mes = mes;
+function calcularSigno(dia, mes) {
+    if (mes == "Enero") {
+        if (dia >= 21) {
+            //acuario
+            return "acuario";
+        }
+        else {
+            //capricornio
+            return "capricornio";
+        }
     }
-    Main.prototype.getDia = function () {
-        return this.dia;
-    };
-    Main.prototype.getMes = function () {
-        return this.mes;
-    };
-    Main.prototype.setDia = function (dia) {
-        this.dia = dia;
-    };
-    Main.prototype.setMes = function (mes) {
-        this.mes = mes;
-    };
-    Main.prototype.calcularSigno = function (dia, mes) {
-        if (mes == "Enero") {
-            if (this.dia >= 21) {
-                //acuario
-                return "acuario";
-            }
-            else {
-                //capricornio
-                return "capricornio";
-            }
+    if (mes == "Febrero") {
+        if (dia >= 19) {
+            return "piscis";
         }
-        if (this.mes == "Febrero") {
-            if (dia >= 19) {
-                return "piscis";
-            }
-            else {
-                return "acuario";
-            }
+        else {
+            return "acuario";
         }
-        if (this.mes == "Marzo") {
-            if (dia >= 20) {
-                //acuario
-                return "aries";
-            }
-            else {
-                //capricornio
-                return "piscis";
-            }
+    }
+    if (mes == "Marzo") {
+        if (dia >= 20) {
+            //acuario
+            return "aries";
         }
-        if (this.mes == "Abril") {
-            if (dia >= 20) {
-                return "tauro";
-            }
-            else {
-                return "Aries";
-            }
+        else {
+            //capricornio
+            return "piscis";
         }
-        if (this.mes == "Mayo") {
-            if (dia >= 21) {
-                //acuario
-                return "geminis";
-            }
-            else {
-                //capricornio
-                return "tauro";
-            }
+    }
+    if (mes == "Abril") {
+        if (dia >= 20) {
+            return "tauro";
         }
-        if (this.mes == "Junio") {
-            if (dia >= 20) {
-                return "cancer";
-            }
-            else {
-                return "geminis";
-            }
+        else {
+            return "Aries";
         }
-        if (this.mes == "Julio") {
-            if (dia >= 22) {
-                //acuario
-                return "leo";
-            }
-            else {
-                //capricornio
-                return "cancer";
-            }
+    }
+    if (mes == "Mayo") {
+        if (dia >= 21) {
+            //acuario
+            return "geminis";
         }
-        if (this.mes == "Agosto") {
-            if (dia >= 21) {
-                return "virgo";
-            }
-            else {
-                return "leo";
-            }
+        else {
+            //capricornio
+            return "tauro";
         }
-        if (this.mes == "Septiembre") {
-            if (dia >= 22) {
-                //acuario
-                return "libra";
-            }
-            else {
-                //capricornio
-                return "virgo";
-            }
+    }
+    if (mes == "Junio") {
+        if (dia >= 20) {
+            return "cancer";
         }
-        if (this.mes == "Octubre") {
-            if (dia >= 22) {
-                return "escorpion";
-            }
-            else {
-                return "libra";
-            }
+        else {
+            return "geminis";
         }
-        if (this.mes == "Noviembre") {
-            if (dia >= 21) {
-                //acuario
-                return "sagitario";
-            }
-            else {
-                //capricornio
-                return "escorpion";
-            }
+    }
+    if (mes == "Julio") {
+        if (dia >= 22) {
+            //acuario
+            return "leo";
         }
-        if (this.mes == "Diciembre") {
-            if (dia >= 21) {
-                return "capricornio";
-            }
-            else {
-                return "sagitario";
-            }
+        else {
+            //capricornio
+            return "cancer";
         }
-        return "fecha no valida ";
-    };
-    return Main;
-}());
-var miSigno = new Main(22, "Octubre");
-console.log(miSigno.calcularSigno(22, "Octubre"));
+    }
+    if (mes == "Agosto") {
+        if (dia >= 21) {
+            return "virgo";
+        }
+        else {
+            return "leo";
+        }
+    }
+    if (mes == "Septiembre") {
+        if (dia >= 22) {
+            //acuario
+            return "libra";
+        }
+        else {
+            //capricornio
+            return "virgo";
+        }
+    }
+    if (mes == "Octubre") {
+        if (dia >= 22) {
+            return "escorpion";
+        }
+        else {
+            return "libra";
+        }
+    }
+    if (mes == "Noviembre") {
+        if (dia >= 21) {
+            //acuario
+            return "sagitario";
+        }
+        else {
+            //capricornio
+            return "escorpion";
+        }
+    }
+    if (mes == "Diciembre") {
+        if (dia >= 21) {
+            return "capricornio";
+        }
+        else {
+            return "sagitario";
+        }
+    }
+    return "fecha no valida ";
+}
+console.log(calcularSigno(21, "Octubre"));

@@ -8,7 +8,6 @@ let oceania: string[] = ["Austria", "Nueva Zelanda", "Samoa", "Nueva Guinea", "I
 
 function continent(country: string) {
     let continentes: string[][] = [latinoAmeria, europa, asia, africa, oceania];
-    let matriz = new Array(continentes);
     for (let i = 0; i < continentes.length; i++) {
         let mensaje: string = "";
         if (latinoAmeria[i] == country) {
