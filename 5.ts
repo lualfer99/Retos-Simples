@@ -10,10 +10,8 @@ function arcoiris(x:string[]){
                 mensaje = "El color no está dentro del arcoiris";
         }
 
-        }d
-
-        return mensaje
-        
+        }
+         
     }
 
        
